@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add New Record{% endblock %}
+
+{% block breadcrumb1 %}Home{% endblock %}
+{% block breadcrumb2 %}Add New Record{% endblock %}
+{% block content %}
+
+
+
+<form class="p-3" action="{{ path('bulk_user_upload_submit') }}" method="POST" enctype="multipart/form-data">
+    <!-- Add your form fields here -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="file" accept=".xlsx" class="form-control" id="file" name="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+{% endblock %}

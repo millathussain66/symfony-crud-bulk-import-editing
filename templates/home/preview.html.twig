@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add New Record{% endblock %}
+
+{% block breadcrumb1 %}Home{% endblock %}
+{% block breadcrumb2 %}Preview{% endblock %}
+{% block content %}
+
+<div  class="card p-3 m-3">
+    <h4 class="bg-info text-center text-white p-3">Preview</h4>
+    <div class="card-body">
+        <h5 class="card-title">Name : {{ user.name }}</h5>
+        <h5 class="card-title">Email : {{ user.email }}</h5>
+    </div>
+</div>
+
+{% endblock %}
